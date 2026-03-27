@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx storybook dev -p 6006",
-    "build": "npx storybook build -o dist",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build -o dist",
     "clean": "rm -rf dist"
   },
   "dependencies": {

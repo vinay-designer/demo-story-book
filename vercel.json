@@ -1,5 +1,5 @@
 {
   "installCommand": "corepack enable && pnpm install",
-  "buildCommand": "pnpm --filter @ds/tokens build && pnpm run build && ls packages/storybook/dist && cp -r packages/storybook/dist dist",
+  "buildCommand": "pnpm --filter @ds/tokens build && pnpm run build && cp -r packages/storybook/dist dist",
   "outputDirectory": "dist"
 }
