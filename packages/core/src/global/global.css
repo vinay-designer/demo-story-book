@@ -1,4 +1,4 @@
-@import '../../../tokens/dist/css/variables.css';
+@import '../../node_modules/@ds/tokens/dist/css/variables.css';
 
 *,
 *::before,
