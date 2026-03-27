@@ -1,6 +1,44 @@
 import type { Preview } from '@storybook/web-components';
-import '@ds/core/dist/components';
 import theme from './theme';
+
+// Import all custom element components (each auto-defines on import)
+import '@ds/core/dist/components/ds-accordion';
+import '@ds/core/dist/components/ds-accordion-item';
+import '@ds/core/dist/components/ds-alert';
+import '@ds/core/dist/components/ds-avatar';
+import '@ds/core/dist/components/ds-badge';
+import '@ds/core/dist/components/ds-breadcrumb';
+import '@ds/core/dist/components/ds-breadcrumb-item';
+import '@ds/core/dist/components/ds-button';
+import '@ds/core/dist/components/ds-card';
+import '@ds/core/dist/components/ds-chart-bar';
+import '@ds/core/dist/components/ds-chart-donut';
+import '@ds/core/dist/components/ds-chart-line';
+import '@ds/core/dist/components/ds-checkbox';
+import '@ds/core/dist/components/ds-checkbox-group';
+import '@ds/core/dist/components/ds-dropdown';
+import '@ds/core/dist/components/ds-dropdown-item';
+import '@ds/core/dist/components/ds-input';
+import '@ds/core/dist/components/ds-modal';
+import '@ds/core/dist/components/ds-pagination';
+import '@ds/core/dist/components/ds-progress';
+import '@ds/core/dist/components/ds-radio';
+import '@ds/core/dist/components/ds-radio-group';
+import '@ds/core/dist/components/ds-select';
+import '@ds/core/dist/components/ds-skeleton';
+import '@ds/core/dist/components/ds-spinner';
+import '@ds/core/dist/components/ds-stat-card';
+import '@ds/core/dist/components/ds-stepper';
+import '@ds/core/dist/components/ds-tab';
+import '@ds/core/dist/components/ds-tab-panel';
+import '@ds/core/dist/components/ds-table';
+import '@ds/core/dist/components/ds-tabs';
+import '@ds/core/dist/components/ds-tag';
+import '@ds/core/dist/components/ds-timeline';
+import '@ds/core/dist/components/ds-toast';
+import '@ds/core/dist/components/ds-toast-container';
+import '@ds/core/dist/components/ds-toggle';
+import '@ds/core/dist/components/ds-tooltip';
 
 // Import the base token CSS (light defaults under :root)
 import '@ds/core/dist/ds-core/ds-core.css';
