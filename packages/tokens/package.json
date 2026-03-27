@@ -1,0 +1,26 @@
+{
+  "name": "@ds/tokens",
+  "version": "0.0.0",
+  "private": false,
+  "main": "dist/ts/index.js",
+  "types": "dist/ts/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ts/index.js",
+      "types": "./dist/ts/index.d.ts"
+    },
+    "./css": "./dist/css/variables.css",
+    "./css/dark": "./dist/css/dark.css",
+    "./scss": "./dist/scss/_variables.scss",
+    "./scss/dark": "./dist/scss/_dark.scss"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsx build.ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.1.0",
+    "tsx": "^4.19.0"
+  }
+}

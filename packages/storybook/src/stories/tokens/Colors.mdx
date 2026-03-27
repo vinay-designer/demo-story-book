@@ -1,0 +1,132 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Tokens/Colors" />
+
+# Colors
+
+Our color system uses a two-layer architecture: **primitive** raw color scales and **semantic** purpose-based tokens that adapt to light/dark themes.
+
+## Primitive Palettes
+
+### Coral — Brand Primary
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`coral-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-coral-${shade})`, border: '1px solid rgba(0,0,0,0.06)', transition: 'transform 0.2s ease' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Midnight — Dark Accents
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`midnight-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-midnight-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Neutral — UI Foundation
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`neutral-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-neutral-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Emerald — Success
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`emerald-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-emerald-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Amber — Warning
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`amber-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-amber-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Rose — Danger
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`rose-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-rose-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+### Violet — Info
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '6px', marginTop: '12px' }}>
+  {['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'].map(shade => (
+    <div key={`violet-${shade}`} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+      <div style={{ width: '100%', height: '56px', borderRadius: '12px', backgroundColor: `var(--ds-color-violet-${shade})`, border: '1px solid rgba(0,0,0,0.06)' }} />
+      <span style={{ fontSize: '10px', fontWeight: 600, color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{shade}</span>
+    </div>
+  ))}
+</div>
+
+---
+
+## Semantic Tokens
+
+These tokens map to primitives and automatically switch between light and dark themes.
+
+### Backgrounds
+| Token | Light | Dark | Usage |
+|-------|-------|------|-------|
+| `--ds-color-bg-primary` | White | #0A0A0A | Main surface |
+| `--ds-color-bg-secondary` | #FAFAFA | #141414 | Subtle surface |
+| `--ds-color-bg-tertiary` | #F7F7F7 | #1F1F1F | Muted surface |
+| `--ds-color-bg-brand` | Coral 50 | Deep coral | Brand tinted |
+| `--ds-color-bg-glass` | rgba white 72% | rgba black 72% | Glassmorphism |
+
+### Foregrounds
+| Token | Light | Dark | Usage |
+|-------|-------|------|-------|
+| `--ds-color-fg-primary` | #141414 | #F7F7F7 | Primary text |
+| `--ds-color-fg-secondary` | #545454 | #AFAFAF | Secondary text |
+| `--ds-color-fg-brand` | Coral 500 | Coral 400 | Brand text |
+| `--ds-color-fg-link` | Coral 500 | Coral 400 | Interactive links |
+
+### Actions
+| Token | Light | Dark | Usage |
+|-------|-------|------|-------|
+| `--ds-color-action-primary` | Coral 500 | Coral 500 | Primary CTA |
+| `--ds-color-action-secondary` | #141414 | White | Secondary CTA |
+| `--ds-color-action-danger` | Rose 500 | Rose 500 | Destructive |
+| `--ds-color-action-success` | Emerald 500 | Emerald 500 | Positive |
+
+### Gradients
+| Token | Usage |
+|-------|-------|
+| `--ds-color-gradient-brand` | Primary brand gradient (buttons, progress) |
+| `--ds-color-gradient-sunset` | Warm decorative gradient |
+| `--ds-color-gradient-ocean` | Cool decorative gradient |
+| `--ds-color-gradient-glass` | Glassmorphism overlay |
+
+<div style={{ display: 'flex', gap: '12px', marginTop: '16px' }}>
+  <div style={{ flex: 1, height: '64px', borderRadius: '16px', background: 'var(--ds-color-gradient-brand)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '13px' }}>Brand</div>
+  <div style={{ flex: 1, height: '64px', borderRadius: '16px', background: 'var(--ds-color-gradient-sunset)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '13px' }}>Sunset</div>
+  <div style={{ flex: 1, height: '64px', borderRadius: '16px', background: 'var(--ds-color-gradient-ocean)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '13px' }}>Ocean</div>
+  <div style={{ flex: 1, height: '64px', borderRadius: '16px', background: 'var(--ds-color-gradient-dark)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '13px' }}>Dark</div>
+</div>

@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Tokens/Spacing" />
+
+# Spacing
+
+A consistent spacing scale based on 0.25rem (4px) increments.
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '16px' }}>
+  {[
+    { name: '0', value: '0' },
+    { name: '1', value: '0.25rem' },
+    { name: '2', value: '0.5rem' },
+    { name: '3', value: '0.75rem' },
+    { name: '4', value: '1rem' },
+    { name: '5', value: '1.25rem' },
+    { name: '6', value: '1.5rem' },
+    { name: '8', value: '2rem' },
+    { name: '10', value: '2.5rem' },
+    { name: '12', value: '3rem' },
+    { name: '16', value: '4rem' },
+    { name: '20', value: '5rem' },
+  ].map(item => (
+    <div key={item.name} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <code style={{ minWidth: '130px', fontSize: '12px', color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>--ds-spacing-{item.name}</code>
+      <div style={{ height: '24px', width: `var(--ds-spacing-${item.name}, ${item.value})`, backgroundColor: 'var(--ds-color-action-primary, #2563eb)', borderRadius: '4px', minWidth: '2px' }} />
+      <span style={{ fontSize: '12px', color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>{item.value}</span>
+    </div>
+  ))}
+</div>

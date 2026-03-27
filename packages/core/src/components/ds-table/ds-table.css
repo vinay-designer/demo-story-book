@@ -1,0 +1,101 @@
+:host {
+  display: block;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1.5px solid var(--ds-color-border-default, #E2E2E2);
+  border-radius: var(--ds-border-radius-xl, 18px);
+}
+
+.table-wrapper::-webkit-scrollbar { height: 6px; }
+.table-wrapper::-webkit-scrollbar-track { background: transparent; }
+.table-wrapper::-webkit-scrollbar-thumb { background: var(--ds-color-border-default, #E2E2E2); border-radius: 3px; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ds-font-family-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--ds-font-size-sm, 0.875rem);
+}
+
+.table__head {
+  background-color: var(--ds-color-bg-secondary, #FAFAFA);
+}
+
+.table__th {
+  padding: 14px 20px;
+  font-weight: var(--ds-font-weight-semibold, 600);
+  color: var(--ds-color-fg-secondary, #545454);
+  border-bottom: 1.5px solid var(--ds-color-border-default, #E2E2E2);
+  white-space: nowrap;
+  user-select: none;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table__th--sortable {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.table__th--sortable:hover {
+  color: var(--ds-color-fg-primary, #141414);
+}
+
+.table__th--left { text-align: left; }
+.table__th--center { text-align: center; }
+.table__th--right { text-align: right; }
+
+.table__th-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.table__sort-icon {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.table__td {
+  padding: 14px 20px;
+  color: var(--ds-color-fg-primary, #141414);
+  border-bottom: 1px solid var(--ds-color-border-subtle, #EFEFEF);
+  font-weight: var(--ds-font-weight-medium, 500);
+}
+
+.table__td--left { text-align: left; }
+.table__td--center { text-align: center; }
+.table__td--right { text-align: right; }
+
+.table--compact .table__th,
+.table--compact .table__td {
+  padding: 10px 16px;
+}
+
+.table--striped .table__body tr:nth-child(even) {
+  background-color: var(--ds-color-bg-secondary, #FAFAFA);
+}
+
+.table--hoverable .table__row:hover {
+  background-color: var(--ds-color-bg-brand, #fff5f5);
+}
+
+.table__row {
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.table__row:last-child .table__td {
+  border-bottom: none;
+}
+
+.table__empty {
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--ds-color-fg-tertiary, #AFAFAF);
+  font-weight: var(--ds-font-weight-medium, 500);
+}

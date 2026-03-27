@@ -1,0 +1,82 @@
+:host {
+  display: block;
+  font-family: var(--ds-font-family-sans, 'Plus Jakarta Sans', sans-serif);
+}
+
+.line-chart {
+  width: 100%;
+  overflow: visible;
+}
+
+.line-chart__grid-label {
+  font-size: 11px;
+  font-weight: 500;
+  fill: var(--ds-color-fg-tertiary, #AFAFAF);
+}
+
+.line-chart__x-label {
+  font-size: 11px;
+  font-weight: 500;
+  fill: var(--ds-color-fg-tertiary, #AFAFAF);
+}
+
+.line-chart__line {
+  transition: opacity 0.2s ease;
+}
+
+.line-chart__line--animated {
+  animation: lineReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.line-chart__area {
+  transition: opacity 0.2s ease;
+}
+
+.line-chart__area--animated {
+  animation: areaFade 1s ease 0.3s both;
+}
+
+.line-chart__dot {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.line-chart__dot:hover {
+  r: 6;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
+
+.line-chart__legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.line-chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.line-chart__legend-line {
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.line-chart__legend-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ds-color-fg-secondary, #545454);
+}
+
+@keyframes lineReveal {
+  from { stroke-dasharray: 2000; stroke-dashoffset: 2000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes areaFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

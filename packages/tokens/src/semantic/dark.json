@@ -1,0 +1,65 @@
+{
+  "color": {
+    "bg": {
+      "primary":    { "$value": "{color.neutral.950}" },
+      "secondary":  { "$value": "{color.neutral.900}" },
+      "tertiary":   { "$value": "{color.neutral.800}" },
+      "elevated":   { "$value": "{color.neutral.800}" },
+      "inverse":    { "$value": "{color.neutral.0}" },
+      "brand":      { "$value": "#2A1015" },
+      "brandSubtle":{ "$value": "#1E0C0F" },
+      "success":    { "$value": "#0C1F17" },
+      "warning":    { "$value": "#1F1A0C" },
+      "danger":     { "$value": "#1F0C10" },
+      "info":       { "$value": "#150C1F" },
+      "glass":      { "$value": "rgba(20, 20, 20, 0.72)" },
+      "overlay":    { "$value": "rgba(0, 0, 0, 0.65)" }
+    },
+    "fg": {
+      "primary":    { "$value": "{color.neutral.50}" },
+      "secondary":  { "$value": "{color.neutral.400}" },
+      "tertiary":   { "$value": "{color.neutral.500}" },
+      "inverse":    { "$value": "{color.neutral.900}" },
+      "brand":      { "$value": "{color.coral.400}" },
+      "link":       { "$value": "{color.coral.400}" },
+      "linkHover":  { "$value": "{color.coral.300}" },
+      "success":    { "$value": "{color.emerald.400}" },
+      "warning":    { "$value": "{color.amber.400}" },
+      "danger":     { "$value": "{color.rose.400}" },
+      "info":       { "$value": "{color.violet.400}" },
+      "disabled":   { "$value": "{color.neutral.600}" },
+      "onBrand":    { "$value": "{color.neutral.0}" }
+    },
+    "border": {
+      "default":    { "$value": "{color.neutral.800}" },
+      "subtle":     { "$value": "{color.neutral.900}" },
+      "strong":     { "$value": "{color.neutral.600}" },
+      "focus":      { "$value": "{color.coral.400}" },
+      "error":      { "$value": "{color.rose.400}" },
+      "success":    { "$value": "{color.emerald.400}" },
+      "brand":      { "$value": "{color.coral.500}" }
+    },
+    "action": {
+      "primary":        { "$value": "{color.coral.500}" },
+      "primaryHover":   { "$value": "{color.coral.400}" },
+      "primaryActive":  { "$value": "{color.coral.300}" },
+      "secondary":      { "$value": "{color.neutral.0}" },
+      "secondaryHover": { "$value": "{color.neutral.200}" },
+      "tertiary":       { "$value": "{color.neutral.800}" },
+      "tertiaryHover":  { "$value": "{color.neutral.700}" },
+      "danger":         { "$value": "{color.rose.500}" },
+      "dangerHover":    { "$value": "{color.rose.400}" },
+      "success":        { "$value": "{color.emerald.500}" },
+      "warning":        { "$value": "{color.amber.500}" },
+      "ghost":          { "$value": "transparent" },
+      "ghostHover":     { "$value": "{color.neutral.800}" }
+    },
+    "gradient": {
+      "brand":  { "$value": "linear-gradient(135deg, #FF385C 0%, #E31C5F 50%, #BD1E59 100%)" },
+      "sunset": { "$value": "linear-gradient(135deg, #FF385C 0%, #FF6B6B 50%, #FFA07A 100%)" },
+      "ocean":  { "$value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+      "dark":   { "$value": "linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 50%, #16213E 100%)" },
+      "glass":  { "$value": "linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%)" }
+    }
+  }
+}

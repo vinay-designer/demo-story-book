@@ -1,0 +1,20 @@
+{
+  "border": {
+    "radius": {
+      "none":  { "$value": "0",       "$type": "dimension" },
+      "sm":    { "$value": "6px",     "$type": "dimension" },
+      "md":    { "$value": "10px",    "$type": "dimension" },
+      "lg":    { "$value": "14px",    "$type": "dimension" },
+      "xl":    { "$value": "18px",    "$type": "dimension" },
+      "2xl":   { "$value": "24px",    "$type": "dimension" },
+      "3xl":   { "$value": "32px",    "$type": "dimension" },
+      "full":  { "$value": "9999px",  "$type": "dimension" }
+    },
+    "width": {
+      "0":    { "$value": "0",     "$type": "dimension" },
+      "1":    { "$value": "1px",   "$type": "dimension" },
+      "2":    { "$value": "1.5px", "$type": "dimension" },
+      "3":    { "$value": "2px",   "$type": "dimension" }
+    }
+  }
+}

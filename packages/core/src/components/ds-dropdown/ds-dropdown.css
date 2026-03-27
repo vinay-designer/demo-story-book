@@ -1,0 +1,89 @@
+:host {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__trigger {
+  cursor: pointer;
+}
+
+.dropdown__menu {
+  position: absolute;
+  z-index: var(--ds-z-dropdown, 1000);
+  min-width: 200px;
+  background-color: var(--ds-color-bg-primary, #ffffff);
+  border: 1px solid var(--ds-color-border-subtle, #EFEFEF);
+  border-radius: var(--ds-border-radius-xl, 18px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+  padding: 6px;
+  overflow: hidden;
+  animation: menuIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dropdown__menu--bottom-start { top: calc(100% + 6px); left: 0; }
+.dropdown__menu--bottom-end   { top: calc(100% + 6px); right: 0; }
+.dropdown__menu--top-start    { bottom: calc(100% + 6px); left: 0; }
+.dropdown__menu--top-end      { bottom: calc(100% + 6px); right: 0; }
+
+.dropdown__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: calc(var(--ds-z-dropdown, 1000) - 1);
+}
+
+/* Dropdown item */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--ds-font-family-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--ds-font-size-sm, 0.875rem);
+  font-weight: var(--ds-font-weight-medium, 500);
+  color: var(--ds-color-fg-primary, #141414);
+  text-align: left;
+  border-radius: var(--ds-border-radius-md, 10px);
+  transition: all 0.15s ease;
+}
+
+.dropdown-item:hover:not(:disabled) {
+  background-color: var(--ds-color-bg-tertiary, #F7F7F7);
+}
+
+.dropdown-item:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--ds-color-action-primary, #FF385C);
+}
+
+.dropdown-item--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dropdown-item--danger {
+  color: var(--ds-color-fg-danger, #e11d48);
+}
+
+.dropdown-item--danger:hover:not(:disabled) {
+  background-color: rgba(244,63,94,0.06);
+}
+
+.dropdown-item__content {
+  flex: 1;
+}
+
+@keyframes menuIn {
+  from { opacity: 0; transform: translateY(-8px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}

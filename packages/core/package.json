@@ -1,0 +1,43 @@
+{
+  "name": "@ds/core",
+  "version": "0.0.0",
+  "description": "Enterprise design system web components built with Stencil",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/ds-core/ds-core.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./loader": {
+      "import": "./loader/index.js",
+      "require": "./loader/index.cjs.js",
+      "types": "./loader/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "dev": "stencil build --dev --watch",
+    "test": "stencil test --spec",
+    "test:watch": "stencil test --spec --watchAll",
+    "generate": "stencil generate",
+    "clean": "rm -rf dist loader www"
+  },
+  "dependencies": {
+    "@ds/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.22.0",
+    "@stencil/react-output-target": "^0.7.0",
+    "@stencil/angular-output-target": "^0.9.0"
+  }
+}

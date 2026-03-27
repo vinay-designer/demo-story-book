@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-group__legend {
+  font-family: var(--ds-font-family-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--ds-font-size-sm, 0.875rem);
+  font-weight: var(--ds-font-weight-semibold, 600);
+  color: var(--ds-color-fg-primary, #141414);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.radio-group__items {
+  display: flex;
+  gap: 12px;
+}
+
+.radio-group--vertical .radio-group__items {
+  flex-direction: column;
+}
+
+.radio-group--horizontal .radio-group__items {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio-group__error {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--ds-font-family-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--ds-font-size-xs, 0.75rem);
+  color: var(--ds-color-fg-danger, #e11d48);
+}

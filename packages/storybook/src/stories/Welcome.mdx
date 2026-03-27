@@ -1,0 +1,58 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Welcome" />
+
+# Design System
+
+A production-grade, enterprise-ready component library built with **Stencil Web Components**.
+
+## Packages
+
+| Package | Description |
+|---------|-------------|
+| `@ds/tokens` | Design tokens (colors, typography, spacing, shadows) |
+| `@ds/core` | Web Components (the source of truth) |
+| `@ds/react` | React wrappers (auto-generated) |
+| `@ds/angular` | Angular wrappers (auto-generated) |
+
+## Getting Started
+
+### Vanilla / Web Components
+
+```html
+<script type="module" src="@ds/core/dist/ds-core/ds-core.esm.js"></script>
+<link rel="stylesheet" href="@ds/tokens/css" />
+
+<ds-button variant="primary">Click me</ds-button>
+```
+
+### React
+
+```tsx
+import { DsButton } from '@ds/react';
+
+export default function App() {
+  return <DsButton variant="primary">Click me</DsButton>;
+}
+```
+
+### Angular
+
+```typescript
+import { DsButton } from '@ds/angular';
+
+@NgModule({
+  declarations: [DsButton],
+})
+export class AppModule {}
+```
+
+## Theming
+
+Toggle between light and dark themes using the toolbar above (sun/moon icons).
+
+The design system uses CSS custom properties with a `--ds-` prefix. Dark mode is activated via `data-theme="dark"` on the root element.
+
+```html
+<html data-theme="dark">
+```

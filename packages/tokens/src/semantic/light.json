@@ -1,0 +1,65 @@
+{
+  "color": {
+    "bg": {
+      "primary":    { "$value": "{color.neutral.0}" },
+      "secondary":  { "$value": "{color.neutral.25}" },
+      "tertiary":   { "$value": "{color.neutral.50}" },
+      "elevated":   { "$value": "{color.neutral.0}" },
+      "inverse":    { "$value": "{color.neutral.900}" },
+      "brand":      { "$value": "{color.coral.50}" },
+      "brandSubtle":{ "$value": "#FFF0F1" },
+      "success":    { "$value": "{color.emerald.50}" },
+      "warning":    { "$value": "{color.amber.50}" },
+      "danger":     { "$value": "{color.rose.50}" },
+      "info":       { "$value": "{color.violet.50}" },
+      "glass":      { "$value": "rgba(255, 255, 255, 0.72)" },
+      "overlay":    { "$value": "rgba(0, 0, 0, 0.45)" }
+    },
+    "fg": {
+      "primary":    { "$value": "{color.neutral.900}" },
+      "secondary":  { "$value": "{color.neutral.600}" },
+      "tertiary":   { "$value": "{color.neutral.400}" },
+      "inverse":    { "$value": "{color.neutral.0}" },
+      "brand":      { "$value": "{color.coral.500}" },
+      "link":       { "$value": "{color.coral.500}" },
+      "linkHover":  { "$value": "{color.coral.600}" },
+      "success":    { "$value": "{color.emerald.600}" },
+      "warning":    { "$value": "{color.amber.700}" },
+      "danger":     { "$value": "{color.rose.600}" },
+      "info":       { "$value": "{color.violet.600}" },
+      "disabled":   { "$value": "{color.neutral.300}" },
+      "onBrand":    { "$value": "{color.neutral.0}" }
+    },
+    "border": {
+      "default":    { "$value": "{color.neutral.200}" },
+      "subtle":     { "$value": "{color.neutral.100}" },
+      "strong":     { "$value": "{color.neutral.300}" },
+      "focus":      { "$value": "{color.coral.500}" },
+      "error":      { "$value": "{color.rose.500}" },
+      "success":    { "$value": "{color.emerald.500}" },
+      "brand":      { "$value": "{color.coral.400}" }
+    },
+    "action": {
+      "primary":        { "$value": "{color.coral.500}" },
+      "primaryHover":   { "$value": "{color.coral.600}" },
+      "primaryActive":  { "$value": "{color.coral.700}" },
+      "secondary":      { "$value": "{color.neutral.900}" },
+      "secondaryHover": { "$value": "{color.neutral.800}" },
+      "tertiary":       { "$value": "{color.neutral.100}" },
+      "tertiaryHover":  { "$value": "{color.neutral.200}" },
+      "danger":         { "$value": "{color.rose.500}" },
+      "dangerHover":    { "$value": "{color.rose.600}" },
+      "success":        { "$value": "{color.emerald.500}" },
+      "warning":        { "$value": "{color.amber.500}" },
+      "ghost":          { "$value": "transparent" },
+      "ghostHover":     { "$value": "{color.neutral.50}" }
+    },
+    "gradient": {
+      "brand":  { "$value": "linear-gradient(135deg, #FF385C 0%, #E31C5F 50%, #BD1E59 100%)" },
+      "sunset": { "$value": "linear-gradient(135deg, #FF385C 0%, #FF6B6B 50%, #FFA07A 100%)" },
+      "ocean":  { "$value": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+      "dark":   { "$value": "linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%)" },
+      "glass":  { "$value": "linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%)" }
+    }
+  }
+}

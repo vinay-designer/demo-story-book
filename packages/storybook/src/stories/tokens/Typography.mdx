@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Tokens/Typography" />
+
+# Typography
+
+## Font Families
+
+| Token | Value |
+|-------|-------|
+| `--ds-font-family-sans` | Inter, system-ui, sans-serif |
+| `--ds-font-family-mono` | JetBrains Mono, monospace |
+
+## Font Sizes
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '16px' }}>
+  {[
+    { name: 'xs', size: '0.75rem' },
+    { name: 'sm', size: '0.875rem' },
+    { name: 'md', size: '1rem' },
+    { name: 'lg', size: '1.125rem' },
+    { name: 'xl', size: '1.25rem' },
+    { name: '2xl', size: '1.5rem' },
+    { name: '3xl', size: '1.875rem' },
+    { name: '4xl', size: '2.25rem' },
+  ].map(item => (
+    <div key={item.name} style={{ display: 'flex', alignItems: 'baseline', gap: '16px' }}>
+      <code style={{ minWidth: '80px', fontSize: '12px', color: 'var(--ds-color-fg-tertiary, #AFAFAF)' }}>--ds-font-size-{item.name}</code>
+      <span style={{ fontSize: `var(--ds-font-size-${item.name}, ${item.size})`, fontFamily: 'var(--ds-font-family-sans, sans-serif)' }}>
+        The quick brown fox ({item.size})
+      </span>
+    </div>
+  ))}
+</div>
+
+## Font Weights
+
+| Token | Value |
+|-------|-------|
+| `--ds-font-weight-regular` | 400 |
+| `--ds-font-weight-medium` | 500 |
+| `--ds-font-weight-semibold` | 600 |
+| `--ds-font-weight-bold` | 700 |

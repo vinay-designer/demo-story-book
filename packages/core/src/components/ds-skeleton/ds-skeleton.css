@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--ds-color-bg-tertiary, #F7F7F7) 25%, var(--ds-color-bg-secondary, #FAFAFA) 50%, var(--ds-color-bg-tertiary, #F7F7F7) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+.skeleton--text {
+  border-radius: var(--ds-border-radius-sm, 6px);
+}
+
+.skeleton--circular {
+  border-radius: var(--ds-border-radius-full, 9999px);
+}
+
+.skeleton--rectangular {
+  border-radius: 0;
+}
+
+.skeleton--rounded {
+  border-radius: var(--ds-border-radius-xl, 18px);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
