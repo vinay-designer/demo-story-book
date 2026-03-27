@@ -1,11 +1,9 @@
 import type { Preview } from '@storybook/web-components';
-import { defineCustomElements } from '@ds/core/loader';
+import '@ds/core/dist/components';
 import theme from './theme';
 
 // Import the base token CSS (light defaults under :root)
 import '@ds/core/dist/ds-core/ds-core.css';
-
-defineCustomElements();
 
 const darkTokens: Record<string, string> = {
   '--ds-color-bg-primary': '#0a0a0a',
